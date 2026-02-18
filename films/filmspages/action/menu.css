@@ -1,0 +1,75 @@
+.menu{
+    width: 50px;
+    height: auto;
+}
+
+.menu-box{
+    margin: 10px;
+    padding: 10px 13px;
+    background-color: #fff;
+    background-size: cover;
+    position: fixed;
+    border-radius: 20px;
+}
+
+.sidebar {
+    text-align: left;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #120f08;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li{
+    font-family: netflix;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#openSidebarBtn{
+    cursor: pointer;
+}
+
+@media screen and (max-width : 426px){
+    .menu{
+        width: 20px;
+        height: auto;
+    }
+    .menu-box{
+        margin: 10px;
+        padding: 5px 8px;
+        background-color: #fff;
+        background-size: cover;
+        position: fixed;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
