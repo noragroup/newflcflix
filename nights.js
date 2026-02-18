@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const filmDateString = "17/02/2026";
+  const filmDateString = "20/02/2026";
   const startHour = 22;
   const endHour = 6;
 
@@ -89,4 +89,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateDisplay();
   setInterval(updateDisplay, 1000);
+
 });
