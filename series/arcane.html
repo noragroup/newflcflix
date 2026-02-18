@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FLC Flix - Regarder Arcane</title>
+      <link rel="stylesheet" href="series.css">
+      <link rel="stylesheet" href="menu.css">
+      <link rel="stylesheet" href="media.css">
+      <link rel="stylesheet" href="menu2.css">
+      <link rel="stylesheet" href="search.css">
+      <link rel="stylesheet" href="title-bg.css">
+      <link rel="stylesheet" href="seasons.css">
+      <link rel="stylesheet" href="savebtn.css">
+      <link rel="icon" href="img/logo.png">
+    </head>
+    <body>
+      <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" id="closeSidebarBtn">&times;</a>
+          <nav>
+              <ul>
+                  <li><a href="https://flcorp.github.io/flcflix/" id="link">Accueil</a></li>
+                  <li><a href="https://flcorp.github.io/flcflix/films.html" id="link">Films</a></li>
+                  <li><a href="https://flcorp.github.io/flcflix/series.html" id="link">Séries</a></li>
+                  <li><a href="https://flcorp.github.io/flcflix/docs.html" id="link">Documentaires</a></li>
+                  <li><a href="https://flcorp.github.io/flcflix/settings.html" id="link">Paramètres</a></li>
+                  <li><a href="https://flcorp.github.io/flcflix/account.html" id="link">Compte</a></li>
+                  <li><a href="https://flcorp.github.io/nora-group/" id="link" target="_blank">Groupe Nora</a></li>
+              </ul>
+              <div class="websites">
+                <a href="https://flcorp.github.io/flcanimes/" target="_blank"><img src="img/FLC-Animes-E1_logo.png" width="100"></a>
+                <a href="https://flcorp.github.io/flchill/" target="_blank"><img src="img/FLChill-E2_logo.png" width="100"></a>
+              </div>
+          </nav>
+      </div>
+      <div class="nav-bar" id="openSidebarBtn">
+        <img src="img/icons/menu-burger.png" alt="">
+      </div>
+        <header id="top">
+            <p>FLC Flix - Ère 2 | Regarder Arcane</p>
+        </header>
+    
+        <div class="top-section">
+            <div class="container">
+                <img src="img/posters/background-logos/Arcane background.jpg" class="background-image">
+                <div class="logo-container">
+                    <img src="img/posters/background-logos/Arcane logo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+      <main>
+        <section class="synopsis-section">
+            <button class="bookmarkBtn" onclick="addToFavorites('https://flcorp.github.io/flcflix/series/arcane.html', 'https://github.com/FLCorp/flcflixposters/blob/main/arcane_poster.jpg?raw=true')">
+                <span class="IconContainer">
+                  <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+                    <path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"></path>
+                  </svg>
+                </span>
+                <p class="text">Favoris</p>
+            </button>
+            <h1>Synopsis:</h1>
+            <p>Au milieu de la discorde des villes jumelles Piltover et Zaun, deux sœurs se battent dans des camps rivaux dans une guerre entre technologies magiques et convictions contradictoires.</p>
+        </section>
+
+        <section id="about-section" class="media-section">
+          <div>
+            <section id="hero-section">
+                <div class="season-choose">
+                  <a id="Season1" class="menu-a">Saison 1</a>
+                </div>
+            </section>
+            <div class="media-container">
+                <iframe id="media-player" width="720" height="370" src="https://uqload.net/embed-us671lcje2s4.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="button-container">
+                <img src="img/title/seasons/Saison1.png" id="seasonsLogo"><br>
+                <div class="season1" id="seasonsDiv">
+                    <button onclick="changeMedia('us671lcje2s4.html')" class="media-btn" id="s1e1">Episode 1</button>
+                    <button onclick="changeMedia('rg2wtjc9t8mh.html')" class="media-btn" id="s1e2">Episode 2</button>
+                    <button onclick="changeMedia('ajdwqgis9ced.html')" class="media-btn" id="s1e3">Episode 3</button>
+                    <button onclick="changeMedia('qmnhd190shhy.html')" class="media-btn" id="s1e4">Episode 4</button>
+                    <button onclick="changeMedia('woq62ag2hh1v.html')" class="media-btn" id="s1e5">Episode 5</button>
+                    <button onclick="changeMedia('u8wpqql3rskb.html')" class="media-btn" id="s1e6">Episode 6</button>
+                    <button onclick="changeMedia('eoidufgzpzr6.html')" class="media-btn" id="s1e7">Episode 7</button>
+                    <button onclick="changeMedia('bv0r6i641a1m.html')" class="media-btn" id="s1e8">Episode 8</button>
+                    <button onclick="changeMedia('hyp120jhyosr.html')" class="media-btn" id="s1e9">Episode 9</button>
+                    <br><br>
+                </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="important-message">
+        <h1 id="episodesTitle" class="important-msg-txt">Saison 1 - Episode 1</h1>
+      </div>
+
+      <footer>
+          <p>Un site de FloLeCrafteur</p>
+          <p>Hébergé sous les Services de GitHub</p>
+      </footer>
+  
+      <script src="menu.js"></script>
+      <script src="media.js"></script>
+      <script src="icons2.js"></script>
+      <script src="seasons.js"></script>
+      <script src="episodes-seasons/season1.js"></script>
+      <script src="int-favoris.js"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+.media-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.media-btn {
+    font-family: netflix;
+    font-size: 1.5em;
+    margin: 5px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #a47b00;
+    border-radius: 10px;
+    color: #fff;
+    border: 2px solid #a47b00;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.media-btn:hover {
+    font-family: netflix;
+    margin: 5px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #a47b00;
+    border: 2px solid #a47b00;
+    cursor: pointer;
+}
+
+.media-btn-tg {
+    display: none;
+}
+
+.media-top {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    visibility: hidden;
+}
+
+.media-top-visible {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#filmTitleText{
+    font-family: netflix;
+}
+
+@media screen and (max-width : 768px){
+    .media-container iframe{
+        width: 270px;
+        height: 155px;
+    }
+    .media-top{
+        visibility: initial;
+    }
+}
