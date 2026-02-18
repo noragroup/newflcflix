@@ -1,0 +1,138 @@
+.code-zone {
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+#container {
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #1e1e1e;
+    color: #fff;
+    border-radius: 5px;
+    --s: 100px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+#container2 {
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #1e1e1e;
+    color: #fff;
+    border-radius: 5px;
+    background: #121212; /* Fallback for browsers that don't support gradients */
+    background: linear-gradient(
+      135deg,
+      #121212 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      #121212 50%,
+      #121212 75%,
+      #1a1a1a 75%,
+      #1a1a1a
+    );
+    background-size: 40px 40px;
+  
+    /* Animation */
+    animation: move 4s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+
+#container-mobile {
+    display: none;
+}
+
+#accessCodeInput {
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #01510680, #0a0ca780);
+    border: 3px solid #1e1e1e;
+}
+
+#accessNameInput {
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #01510680, #0a0ca780);
+    border: 3px solid #1e1e1e;
+}
+
+#errorMessage {
+    color: red;
+}
+
+#accessBtn {
+    width: auto;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 1.5s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+  
+#accessBtn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+#accessBtn:hover::before {
+    scale: 3;
+}
+  
+#accessBtn:hover {
+    border-radius: 30px;
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+  
+#accessBtn:active {
+    scale: 1;
+}

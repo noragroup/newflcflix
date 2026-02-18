@@ -1,0 +1,481 @@
+@font-face {
+    font-family: FLC-Flix;
+    src: url(font/NORA.ttf);
+}
+
+@font-face {
+    font-family: Era;
+    src: url(font/Black\ Future.otf);
+}
+
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(font/Lexend-VariableFont_wght.ttf);
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #33ccff;
+    border-radius: 5px;
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+* {
+    text-decoration: none;
+}
+
+body {
+    background-color: #0a0a0a;
+    margin: 0;
+}
+
+header {
+    background-color: #0a0a0a;
+    padding: 5px;
+    padding-left: 20px;
+    color: #fff;
+    font-family: Era;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    color: #fff;
+    font-family: Era;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 60px;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+.nav-bar img{
+    width: 60px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.nav-bar #SidebarBtnImgSelected {
+    display: none;
+}
+
+.nav-bar:hover {
+    width: 160px;
+}
+
+.nav-bar:hover .navinfo {
+    opacity: 1;
+    margin-right: 15px;
+}
+
+.nav-bar .navinfo{
+    white-space: nowrap;
+    color: #000;
+    font-family: Lexend;
+    font-size: 0.9em;
+    opacity: 0;
+    margin-right: 0;
+    transition: opacity 0.3s ease, margin 0.3s ease;
+}
+
+.nav-bar:hover{
+    width: 160px;
+}
+
+.nav-bar:hover .navinfo{
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.nights {
+    padding: 10px 15px;
+    border-radius: 100px;
+    position: fixed;
+    left: 30px;
+    bottom: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    background: linear-gradient(to right, #33ccff, #9900ff);
+    display: flex;
+    align-items: center;
+    width: 60px;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+.nights img {
+    width: 60px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.nights:hover {
+    width: 300px;
+}
+
+.nights:hover .nightsinfo {
+    opacity: 1;
+    margin-left: 15px;
+}
+
+.nights .nightsinfo {
+    font-family: Lexend;
+    font-size: 0.9em;
+    color: #fff;
+    white-space: nowrap;
+    opacity: 0;
+    margin-left: 0;
+    transition: opacity 0.3s ease, margin 0.3s ease;
+}
+
+.nights:hover .nightsinfo {
+    opacity: 1;
+}
+
+.top-section .flcflix {
+    font-family: FLC-Flix;
+    font-weight: 1;
+    background: linear-gradient(to right, #cf0000, #0000ae);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top-section .era {
+    font-family: Era;
+    font-weight: 1;
+    background: linear-gradient(to right, #674f00, #c09600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.media-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.principalpage {
+    background: linear-gradient(to bottom, #0a0a0a 10%, #0f3f4c, #2b004c);
+}
+
+.media-section {
+    background-color: #0f3f4c;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Era;
+    font-size: 1.5em;
+}
+
+.media-section .era {
+    font-family: Era;
+    font-weight: 1;
+}
+
+.media-section img {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.media-section img:hover {
+    opacity: 50%;
+}
+
+.media-section .media {
+    border-radius: 20px;
+}
+
+.media-section a {
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.7s ease;
+}
+
+.media-section a:hover {
+    color: #c09600;
+}
+
+.media-section2 {
+    background-color: #231900;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Era;
+    font-size: 1em;
+}
+
+.websites {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+.selection {
+    text-align: center;
+    font-family: Era;
+    color: #fff;
+}
+
+.selection a {
+    margin: 10px;
+    text-decoration: underline;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.selection a:hover {
+    color: #1e1e1e;
+}
+
+.watch-btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.watch-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.watch-btn:hover::before {
+    scale: 3;
+}
+
+.watch-btn:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.watch-btn:active {
+    scale: 1;
+}
+
+.calendrier {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.month #day6 {
+    display: none;
+}
+
+.calendrier #calendar2,
+.calendrier #calendar3,
+.calendrier #calendar4,
+.calendrier #calendar5,
+.calendrier #calendar6 {
+    display: none;
+}
+
+.calendarchoice button {
+    color: #33ccff;
+    font-size: 2em;
+    font-family: Era;
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.calendarchoice button:hover {
+    color: #9900ff;
+}
+
+.dayprogram {
+    padding: 20px;
+    border-radius: 12px;
+    background: #0f3f4c;
+    width: fit-content;
+}
+
+.ligne {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.dayprogram {
+    margin-left: 10px;
+}
+
+.dayprogram h2 {
+    margin-bottom: 10px;
+}
+
+.dayprogram h3 {
+    margin: 15px 0 8px;
+}
+
+.selection {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.selection h1,
+.selection h2,
+.selection h3 {
+    text-align: left;
+}
+
+.selection .month h1 {
+    font-family: FLC-Flix;
+    letter-spacing: 5px;
+    font-size: 4em;
+    text-align: center;
+}
+
+.selection .month .dayprogram h2 {
+    font-size: 2em;
+}
+
+.selection .month .dayprogram h3 {
+    font-size: 1.5em;
+}
+
+.dayly {
+    border-radius: 20px;
+}
+
+@media screen and (max-width : 768px) {
+    .nav-bar {
+        width: fit-content;
+    }
+
+    .nav-bar img {
+        width: 40px;
+        height: auto;
+    }
+
+    .media-section .media {
+        width: 110px;
+        height: 170px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width : 426px) {
+    header {
+        font-size: 1em;
+    }
+
+    .top-section img {
+        width: 80%;
+        height: auto;
+    }
+
+    .top-section p {
+        color: #fff;
+        font-family: Era;
+        font-size: 1.5em;
+    }
+
+    .media-section {
+        font-size: 1em;
+    }
+
+    .nav-bar {
+        width: fit-content;
+    }
+
+    .nav-bar img {
+        width: 35px;
+        height: auto;
+    }
+
+    .media-section img {
+        border-radius: 10px;
+        width: 100px;
+        height: 150px;
+    }
+
+    .media-section .first-media {
+        border-radius: 10px;
+    }
+
+    .media-section .last-media {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width : 376px) {
+    .selection a {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width : 320px) {
+    header {
+        font-size: 0.8em;
+    }
+
+    .media-section img {
+        border-radius: 10px;
+        width: 80px;
+        height: 120px;
+    }
+
+    .nav-bar {
+        border-radius: 10px;
+        padding: 5px;
+        width: fit-content;
+    }
+
+    .nav-bar img {
+        width: 40px;
+        height: auto;
+    }
+}

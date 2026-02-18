@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="timer.css">
+  <link rel="stylesheet" href="news.css">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="title-bg-index.css">
+  <link rel="stylesheet" href="patchnote.css">
+  <title>FLC Flix - Ère 2</title>
+  <link rel="icon" href="img/nouveau/FLC Flix logo.png">
+  <link rel="favicon" href="img/nouveau/FLC Flix logo.png">
+</head>
+
+<body>
+  <div class="timer">
+    <span id="days">00</span> jours
+    <span id="hours">00</span> heures
+    <span id="minutes">00</span> minutes
+    <span id="seconds">00</span> secondes
+  </div>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" id="closeSidebarBtn">&times;</a>
+    <nav>
+      <ul>
+        <li><a href="https://flcorp.github.io/flcflix/" id="link">Accueil</a></li>
+        <li><a href="films.html" id="link">Films</a></li>
+        <li><a href="series.html" id="link">Séries</a></li>
+        <li><a href="docs.html" id="link">Documentaires</a></li>
+      </ul>
+      <ul>
+        <li><a href="nights.html" id="link">FLC Flix Nights</a></li>
+        <li><a href="settings.html" id="link">Paramètres</a></li>
+        <li><a href="account.html" id="link">Compte</a></li>
+      </ul>
+      <ul>
+        <li><a id="showPopupButton" class="link">FLC Flix Ère 2</a></li>
+        <li><a id="showSecondPopupButton" class="link">Patch Note</a></li>
+        <li><a href="https://flcorp.github.io/nora-group/" id="link" target="_blank">Groupe Nora</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="popup" id="popup">
+    <!-- Contenu du popup -->
+    <h2>FLC Flix - Ère 2 est arrivé!</h2>
+    <p>
+      Bonjour / Bonsoir à vous, et bienvenue sur le nouveau FLC Flix! Oui, nous sommes de retour après 2 ans d'absence
+      (mais 2 ans de restructuration du site, et de développement
+      d'un meilleur site surtout). Bref, passons les explications, de toute façon tout a été fait pour que vous puissiez
+      vous y retrouver sans visite guidée, donc un menu latéral ouvrable
+      avec le bouton en bas à droite de l'écran. <br>
+      Cette version a pris du temps a sortir car ces deux dernières années, nous développions cette nouvelle face, cette
+      "Ère 2", mais pas à plein temps puisque d'autre sujets méritaient
+      un plus grande consécration. Mais, nous y voilà! Nous avons tout donnés, que ce soit pour les titres, le visuel du
+      site ou la façon dont on navigue dessus, on a tout fait pour créer
+      une ambiance d'utilisation proche du parfait! <br>
+      Enfin, nous avons modifié le fonctionnement du site, et donc l'arrivée mensuelle des films, et nous vous
+      introduisons donc: <strong>LE CALENDRIER</strong>! (oui on a pas
+      trouvé mieux comme nom). En gros, tous les samedis seront ajoutés des films, pour ajouter par mois un total
+      d'environ 10 films. Cependant pour les séries, elles seront toutes ajoutées
+      le premier samedi du mois, avec ensuite tous les samedis de nouvelles saisons pour des séries déjà présente sur le
+      site. <br>
+      Voilà, nous avons finis. D'autre nouveautés sont présentes ou sont à prévor, mais nous vous laissons découvrir
+      tout cela par vous même. <br>
+      En espérant vous rendre service!
+    </p>
+    <a id="closeButton">
+      <button>
+        Fermer
+      </button>
+    </a>
+  </div>
+  <div class="popup" id="popup2">
+    <!-- Contenu du popup -->
+    <h2>FLC Flix - Ère 2 | Mise à Jour 1.0.0</h2>
+    <p>
+      Modifitcations globales sur tout le site. Amélioration de l'expérience utilisateur.
+    </p>
+    <a id="closeButton2">
+      <button>
+        Fermer
+      </button>
+    </a>
+  </div>
+  <div class="nav-bar" id="openSidebarBtn">
+      <div class="navinfo">
+        <h1>Menu</h1>
+      </div>
+    <img src="img/icons/white/unselected/Menu white unselected.png" id="SidebarBtnImg">
+  </div>
+  <a href="nights.html">
+    <div class="nights" id="FlcFlixNights">
+      <img src="img/nouveau/NIGHTS.png" id="NightsImg">
+      <div class="nightsinfo">
+        <h1>FLC Flix Nights</h1>
+      </div>
+    </div>
+  </a>
+  <header id="top">
+    <p>FLC Flix | Version 1.0.0 - Dernière MàJ le 04/07/2026</p>
+  </header>
+
+  <div class="top-section">
+    <div class="container">
+      <img src="img/background.jpg" class="background-image">
+      <div class="logo-container">
+        <img src="img/nouveau/title.png" width="1200">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="media-selection">
+    <a href="films.html"><img src="img/nouveau/FILMS.png" height="100"></a>
+    <a href="series.html"><img src="img/nouveau/SERIES.png" height="100"></a>
+    <a href=""><img src="img/nouveau/ANIMES.png" height="100"></a>
+  </div>
+  <br>
+  <section class="principalpage">
+    <div class="movies-slides" id="moviesSlides">
+      <h1>Nouveaux Films du mois</h1>
+      <div class="monthlyselection">
+        <button class="monthly-btn" id="seriesNews">Séries du Mois</button>
+      </div>
+      <p class="subtitle">*Vous pouvez cliquez sur les affiches pour avoir des informations sur les films*</p>
+      <div class="posters" id="moviesPosters">
+        <img src="img/posters/films/action/argylle.jpg" class="movie1" id="posters0">
+        <img src="img/posters/films/action/bac_nord.jpg" class="movie2" id="posters0">
+        <img src="img/posters/films/action/black_adam.jpg" class="movie3" id="posters0">
+        <img src="img/posters/films/action/bullet_train_poster.jpg" class="movie4" id="posters0">
+      </div>
+      <div class="film1" id="film1">
+        <h1>Argylle</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet illum a cumque obcaecati ipsam
+          deserunt? Aliquam, recusandae? Deleniti quam quo, obcaecati voluptas eius soluta veniam perferendis a ipsam
+          tempore.</p>
+        <a href="films/filmspages/action/argylle.html"><button class="watch-btn">Regarder</button></a>
+      </div>
+      <div class="film2" id="film2">
+        <h1>Bac Nord</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet illum a cumque obcaecati ipsam
+          deserunt? Aliquam, recusandae? Deleniti quam quo, obcaecati voluptas eius soluta veniam perferendis a ipsam
+          tempore.</p>
+        <a href="films/filmspages/action/bacnord.html"><button class="watch-btn">Regarder</button></a>
+      </div>
+      <div class="film3" id="film3">
+        <h1>Black Adam</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet illum a cumque obcaecati ipsam
+          deserunt? Aliquam, recusandae? Deleniti quam quo, obcaecati voluptas eius soluta veniam perferendis a ipsam
+          tempore.</p>
+        <a href="films/filmspages/action/blackadam.html"><button class="watch-btn">Regarder</button></a>
+      </div>
+      <div class="film4" id="film4">
+        <h1>Bullet Train</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet illum a cumque obcaecati ipsam
+          deserunt? Aliquam, recusandae? Deleniti quam quo, obcaecati voluptas eius soluta veniam perferendis a ipsam
+          tempore.</p>
+        <a href="films/filmspages/action/bullettrain.html"><button class="watch-btn">Regarder</button></a>
+      </div>
+    </div>
+    <div class="series-slides" id="seriesSlides">
+      <h1>Nouvelles Séries du Mois</h1>
+      <div class="monthlyselection">
+        <button class="monthly-btn" id="moviesNews">Films du Mois</button>
+      </div>
+      <p class="subtitle">*Vous pouvez cliquez sur les affiches pour avoir des informations sur les séries*</p>
+      <div class="posters" id="seriesPosters">
+        <img src="img/posters/series/1899.jpg" class="serie1" id="posters1">
+        <img src="img/posters/series/american_horror_story.jpg" class="serie2" id="posters1">
+        <img src="img/posters/series/amphibia.jpg" class="serie3" id="posters1">
+        <img src="img/posters/series/arcane_poster.jpg" class="serie4" id="posters1">
+      </div>
+      <div class="series1" id="series1">
+        <h1>1899</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet illum a cumque obcaecati ipsam
+          deserunt? Aliquam, recusandae? Deleniti quam quo, obcaecati voluptas eius soluta veniam perferendis a ipsam
+          tempore.</p>
+        <a href="series/1899.html"><button class="watch-btn">Regarder</button></a>
+      </div>
+      <div class="series2" id="series2">
+        <h1>American Horror Story</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet illum a cumque obcaecati ipsam
+          deserunt? Aliquam, recusandae? Deleniti quam quo, obcaecati voluptas eius soluta veniam perferendis a ipsam
+          tempore.</p>
+        <a href="series/ahs.html"><button class="watch-btn">Regarder</button></a>
+      </div>
+      <div class="series3" id="series3">
+        <h1>Amphibia</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet illum a cumque obcaecati ipsam
+          deserunt? Aliquam, recusandae? Deleniti quam quo, obcaecati voluptas eius soluta veniam perferendis a ipsam
+          tempore.</p>
+        <a href="series/amphibia.html"><button class="watch-btn">Regarder</button></a>
+      </div>
+      <div class="series4" id="series4">
+        <h1>Arcane</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet illum a cumque obcaecati ipsam
+          deserunt? Aliquam, recusandae? Deleniti quam quo, obcaecati voluptas eius soluta veniam perferendis a ipsam
+          tempore.</p>
+        <a href="series/arcane.html"><button class="watch-btn">Regarder</button></a>
+      </div>
+    </div>
+    <div class="media-section" id="series">
+      <h1>Nouvelles Saisons du Mois</h1>
+      <a href=""><img src="img/posters/series/ahs_s2.jpg" width="170" height="250" class="media"></a>
+      <a href=""><img src="img/posters/series/ahs_s3.jpg" width="170" height="250" class="media"></a>
+      <a href=""><img src="img/posters/series/ahs_s4.jpg" width="170" height="250" class="media"></a>
+    </div>
+    <br>
+    <section class="selection" id="selection">
+      <img src="img/nouveau/CALENDRIER V3.png"><br>
+      <div class="month">
+        <h1 id="calendarMonth">Juillet:</h1>
+        <div class="calendarchoice">
+          <button id="day1">4 Juillet</button>
+          <button id="day2">11 Juillet</button>
+          <button id="day3">18 Juillet</button>
+          <button id="day4">25 Juillet</button>
+          <button id="day5" class="nextmonth">1er Août</button>
+          <button id="day6"></button>
+        </div>
+        <div class="calendrier">
+          <div class="dayprogram" id="calendar1">
+            <h2>4 Juillet (V1.0.0):</h2>
+            <h3>Mise à Jour:</h3>
+            <div class="ligne">
+              <img src="img/version/FLC Flix V1-0-0.png" width="500">
+            </div>
+            <h3>Films:</h3>
+            <div class="ligne films">
+              <img src="films/img/posters/films/action/argylle.jpg" width="170" height="250" class="dayly">
+              <img src="films/img/posters/films/action/bac_nord.jpg" width="170" height="250" class="dayly">
+              <img src="films/img/posters/films/action/black_adam.jpg" width="170" height="250" class="dayly">
+            </div>
+            <h3>Séries:</h3>
+            <div class="ligne series">
+              <img src="series/img/posters/series/1899.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/american_horror_story.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/amphibia.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/arcane_poster.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/better_call_saul_poster.jpg" width="170" height="250" class="dayly">
+            </div>
+          </div>
+          <div class="dayprogram" id="calendar2">
+            <h2>11 Juillet:</h2>
+            <h3>Films:</h3>
+            <div class="ligne films">
+              <img src="films/img/posters/films/action/argylle.jpg" width="170" height="250" class="dayly">
+              <img src="films/img/posters/films/action/bac_nord.jpg" width="170" height="250" class="dayly">
+              <img src="films/img/posters/films/action/black_adam.jpg" width="170" height="250" class="dayly">
+            </div>
+            <h3>Nouvelles Saison:</h3>
+            <div class="ligne series">
+              <img src="series/img/posters/series/ahs_s2.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/ahs_s3.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/ahs_s4.jpg" width="170" height="250" class="dayly">
+            </div>
+          </div>
+          <div class="dayprogram" id="calendar3">
+            <h2>18 Juillet:</h2>
+            <h3>Films:</h3>
+            <div class="ligne films">
+              <img src="films/img/posters/films/action/argylle.jpg" width="170" height="250" class="dayly">
+              <img src="films/img/posters/films/action/bac_nord.jpg" width="170" height="250" class="dayly">
+            </div>
+            <h3>Nouvelles Saison:</h3>
+            <div class="ligne series">
+              <img src="series/img/posters/series/ahs_s2.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/ahs_s3.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/ahs_s4.jpg" width="170" height="250" class="dayly">
+            </div>
+          </div>
+          <div class="dayprogram" id="calendar4">
+            <h2>25 Juillet:</h2>
+            <h3>Films:</h3>
+            <div class="ligne films">
+              <img src="films/img/posters/films/action/argylle.jpg" width="170" height="250" class="dayly">
+              <img src="films/img/posters/films/action/bac_nord.jpg" width="170" height="250" class="dayly">
+            </div>
+            <h3>Nouvelles Saison:</h3>
+            <div class="ligne series">
+              <img src="series/img/posters/series/ahs_s2.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/ahs_s3.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/ahs_s4.jpg" width="170" height="250" class="dayly">
+            </div>
+          </div>
+          <div class="dayprogram" id="calendar5">
+            <h2>1er Août (V1.1.0):</h2>
+            <h3>Mise à Jour:</h3>
+            <div class="ligne">
+              <img src="img/version/FLC Flix V1-1-0.png" width="500">
+            </div>
+          </div>
+          <div class="dayprogram" id="calendar6">
+            <h2>25 Juillet:</h2>
+            <h3>Films:</h3>
+            <div class="ligne films">
+              <img src="films/img/posters/films/action/argylle.jpg" width="170" height="250" class="dayly">
+              <img src="films/img/posters/films/action/bac_nord.jpg" width="170" height="250" class="dayly">
+            </div>
+            <h3>Nouvelles Saison:</h3>
+            <div class="ligne series">
+              <img src="series/img/posters/series/ahs_s2.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/ahs_s3.jpg" width="170" height="250" class="dayly">
+              <img src="series/img/posters/series/ahs_s4.jpg" width="170" height="250" class="dayly">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <div class="search-section">
+      <img src="img/search-bar-title.png" id="search-container">
+      <div class="input__container" id="search-bar-container">
+        <div class="shadow__input"></div>
+        <button class="input__button__shadow">
+          <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20px" width="20px">
+            <path
+              d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z"
+              fill-rule="evenodd" fill="#17202A"></path>
+          </svg>
+        </button>
+        <input type="text" name="text" class="input__search" id="search-input"
+          placeholder="Que souhaites-tu rechercher?">
+      </div>
+    </div><br><br><br>
+  </section>
+
+  <footer>
+    <p>Un site de FloLeCrafteur</p>
+    <p>Hébergé sous les Services de GitHub</p>
+  </footer>
+
+  <script src="menu.js"></script>
+  <script src="icons.js"></script>
+  <script src="search.js"></script>
+  <script src="timer.js"></script>
+  <script src="newfilms.js"></script>
+  <script src="newseries.js"></script>
+  <script src="selection.js"></script>
+  <script src="themes.js"></script>
+  <script src="int-favoris.js"></script>
+  <script src="patchnote.js"></script>
+  <script src="calendar.js"></script>
+</body>
+
+</html>

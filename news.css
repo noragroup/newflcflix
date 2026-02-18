@@ -1,0 +1,176 @@
+.monthlyselection{
+    display: flex;
+    justify-content: center;
+}
+
+.monthly-btn{
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    font-family: netflix;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.monthly-btn:hover{
+    opacity: 50%;
+}
+
+.movies-slides .posters{
+    margin-left: 50px;
+}
+
+.movie1, .movie2, .movie3, .movie4{
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.movie1:hover, .movie2:hover, .movie3:hover, .movie4:hover{
+    opacity: 50%;
+}
+
+.movies-slides h1{
+    font-family: Era;
+    color: #fff;
+    font-size: 4em;
+    font-weight: 1;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.film1, .film2, .film3, .film4{
+    font-family: Arial;
+    color: #fff;
+    margin: 10px;
+    text-align: left;
+    display: none;
+    margin-left: 50px;
+}
+
+.film1 h1, .film2 h1, .film3 h1, .film4 h1{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.film-posters{
+    width: 170px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.series-slides{
+    display: none;
+}
+
+.series-slides .posters{
+    margin-left: 50px;
+}
+
+.serie1, .serie2, .serie3, .serie4{
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.serie1:hover, .serie2:hover, .serie3:hover, .serie4:hover{
+    opacity: 50%;
+}
+
+.series-slides h1{
+    font-family: Era;
+    color: #fff;
+    font-size: 4em;
+    font-weight: 1;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.series1, .series2, .series3, .series4{
+    font-family: Arial;
+    color: #fff;
+    margin: 10px;
+    text-align: left;
+    display: none;
+    margin-left: 50px;
+}
+
+.series1 h1, .series2 h1, .series3 h1, .series4 h1{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.series-posters{
+    width: 170px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.seasons-slides{
+    display: none;
+}
+
+.seasons-slides .posters{
+    margin-left: 10px;
+}
+
+.season1, .season2, .season3, .season4{
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.season1:hover, .season2:hover, .season3:hover, .season4:hover{
+    opacity: 50%;
+}
+
+.seasons-slides h1{
+    font-family: Era;
+    color: #fff;
+    font-size: 4em;
+    font-weight: 1;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.seasons1, .seasons2, .seasons3, .seasons4{
+    font-family: Arial;
+    color: #fff;
+    margin: 10px;
+    text-align: left;
+    display: none;
+}
+
+.seasons1 h1, .seasons2 h1, .seasons3 h1, .seasons4 h1{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.seasons-posters{
+    width: 170px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.subtitle{
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+}
+
+@media screen and (max-width: 426px){
+    .movies-slides h1, .series-slides h1, .seasons-slides h1{
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="news.css">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="title-bg-index.css">
+  <link rel="stylesheet" href="patchnote.css">
+  <link rel="stylesheet" href="nights.css">
+  <title>FLC Flix Nights</title>
+  <link rel="icon" href="img/nouveau/FLC Flix logo.png">
+  <link rel="favicon" href="img/nouveau/FLC Flix logo.png">
+</head>
+
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" id="closeSidebarBtn">&times;</a>
+    <nav>
+      <ul>
+        <li><a href="https://flcorp.github.io/flcflix/" id="link">Accueil</a></li>
+        <li><a href="films.html" id="link">Films</a></li>
+        <li><a href="series.html" id="link">Séries</a></li>
+        <li><a href="docs.html" id="link">Documentaires</a></li>
+      </ul>
+      <ul>
+        <li><a id="showPopupButton" class="link">En savoir plus</a></li>
+        <li><a href="settings.html" id="link">Paramètres</a></li>
+        <li><a href="account.html" id="link">Compte</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://flcorp.github.io/nora-group/" id="link" target="_blank">Groupe Nora</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="popup" id="popup">
+    <!-- Contenu du popup -->
+    <h2>FLC Flix Nights - Comment ça fonctionne?</h2>
+    <p>
+      Bienvenue sur FLC Flix Nights; un ajout à FLC Flix étant là pour (on espère) vous faire accueillir votre week-end
+      avec un film tous les vendredi soirs!
+      Le fonctionnement est très simple: Les samedis, lors des MàJ, un film sera ajouté au programme du prochain FLC
+      Flix Night. Ce film sera un film n'étant pas disponible sur le
+      site, et qui sera généralement choisi pour plaire à tous. Ce film sera disponible le vendredi soir à partir de
+      22h, et cela jusqu'à 6h du matin le lendemain. <br>
+      Ces films seront ensuite ajoutés à FLC Flix lors de la MàJ mensuelle qui suivra (si c'est lors du mois d'août,
+      alors les films seront disponibles en septembre). <br>
+      Nous espérons que ce système vous plaira, et surtout que les films choisis aussi! <br>
+      Bon visionnage à tous!
+    </p>
+    <a id="closeButton">
+      <button>
+        Fermer
+      </button>
+    </a>
+  </div>
+  <div class="nav-bar" id="openSidebarBtn">
+    <img src="img/icons/dark/unselected/Menu black unselected.png" id="SidebarBtnImg">
+    <img src="img/icons/dark/selected/Menu black selected.png" id="SidebarBtnImgSelected">
+  </div>
+  <header id="top">
+    <p>FLC Flix Nights - Passez un bon vendredi soir</p>
+  </header>
+
+  <div class="top-section">
+    <div class="container">
+      <img src="img/background.jpg" class="background-image">
+      <div class="logo-container">
+        <img src="img/nouveau/FLC Flix Nights.png" width="1200">
+      </div>
+    </div>
+  </div>
+  <br>
+  <section class="principalpage">
+    <section class="selection" id="selection">
+      <img src="img/nouveau/PROGRAMME.png">
+      <p class="infos">*Tous les films choisis pour les FLC Flix Nights seront ajoutés au site lors de la mise à jour
+        mensuelle suivante*</p>
+      <br><br><br><br>
+      <div class="month">
+        <div class="calendrier">
+          <div class="dayprogram" id="weeknight">
+            <div class="titles">
+              <h2>7 Août 2026 | 22h - 6h</h2>
+              <h3>F1 - Le Film</h3>
+            </div>
+            <div class="ligne films" style="justify-content: center;">
+              <img src="films/img/posters/films/action/f1.jpg" width="170" height="250" class="dayly">
+            </div>
+          </div>
+          <div id="nextweek"></div>
+        </div>
+      </div>
+    </section>
+    <div class="timer-container">
+      <p class="countdown"></p>
+    </div>
+    <section class="night">
+      <div class="movie">
+        <iframe src="https://uqload.is/embed-08n8dpokwekq.html" allow="fullscreen"></iframe>
+      </div>
+    </section>
+    <br><br><br><br><br><br><br><br>
+  </section>
+
+  <footer>
+    <p>Un site de FloLeCrafteur</p>
+    <p>Hébergé sous les Services de GitHub</p>
+  </footer>
+
+  <script src="menu.js"></script>
+  <script src="icons.js"></script>
+  <script src="selection.js"></script>
+  <script src="themes.js"></script>
+  <script src="int-favoris.js"></script>
+  <script src="nights.js"></script>
+  <script src="patchnote.js"></script>
+</body>
+
+</html>

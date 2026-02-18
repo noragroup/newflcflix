@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="account2.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="title-bg-index.css">
+    <title>FLC Flix - Ère 2 | Comptes</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="favicon" href="img/logo.png">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closeSidebarBtn">&times;</a>
+        <nav>
+            <ul>
+                <li><a href="https://flcorp.github.io/flcflix/" id="link">Accueil</a></li>
+                <li><a href="films.html" id="link">Films</a></li>
+                <li><a href="series.html" id="link">Séries</a></li>
+                <li><a href="docs.html" id="link">Documentaires</a></li>
+                <li><a href="settings.html" id="link">Paramètres</a></li>
+                <li><a href="account.html" id="link">Compte</a></li>
+                <li><a href="https://flcorp.github.io/nora-group/" id="link" target="_blank">Groupe Nora</a></li>
+            </ul>
+            <div class="websites">
+              <a href="https://flcorp.github.io/flcanimes/" target="_blank"><img src="img/FLC-Animes-E1_logo.png" width="100"></a>
+              <a href="https://flcorp.github.io/flchill/" target="_blank"><img src="img/FLChill-E2_logo.png" width="100"></a>
+            </div>
+        </nav>
+    </div>
+    <div class="nav-bar" id="openSidebarBtn">
+      <img src="img/icons/menu-burger.png" alt="">
+    </div>
+    <header id="top">
+        <p>FLC Flix - Ère 2 | Espace Comptes</p>
+    </header>
+    
+    <div class="top-section">
+        <div class="container">
+            <img src="img/background.jpg" class="background-image">
+            <div class="logo-container">
+                <img src="img/FLC-Flix_Comptes.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <main class="code-zone">
+      <div id="container">
+          <h2>Se Connecter</h2>
+          <p>Identifiant:</p>
+          <input type="text" id="accessNameInput" placeholder="Identifiant">
+          <p>Mot de Passe:</p>
+          <input type="password" id="accessCodeInput" placeholder="Mot de Passe"><br>
+          <button onclick="checkAccessCode()" id="accessBtn">Valider</button>
+          <p id="errorMessage"></p>
+      </div>
+    </main>
+
+    <main class="code-zone-mobile">
+      <div id="container-mobile">
+          <h2>Se Connecter</h2>
+          <p>Identifiant:</p>
+          <input type="text" id="accessNameInputMobile" placeholder="Identifiant">
+          <p>Mot de Passe:</p>
+          <input type="password" id="accessCodeInputMobile" placeholder="Mot de Passe"><br>
+          <button onclick="checkAccessCode()" id="accessBtn">Valider</button>
+          <p id="errorMessageMobile"></p>
+      </div>
+    </main>
+
+    <footer>
+        <p>Un site de FloLeCrafteur</p>
+        <p>Hébergé sous les Services de GitHub</p>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="icons.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
